@@ -69,12 +69,6 @@ sudo reboot
 > Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu Server 20.04.6 LTS.
 <br>
 
----
-There are plenty of video tutorials online.
-<br>
-Here is an example for installing on ESXI 8: https://www.youtube.com/watch?v=0N5lp6pHx7A
-
----
 
 ## Credits
 All credit belongs to **PNETLab** and the vibrant community that helps to maintain and evolve the platform. 
