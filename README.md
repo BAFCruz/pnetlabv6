@@ -57,7 +57,7 @@ sudo reboot
 * **GUI Access:** admin / pnet
 <br>
 
-### 5. Upload node images and Have Fun Labbing! 🎉
+### 5. Upload node images and Have Fun with the Network Simulator! 🎉
 <br>
 
 * https://github.com/ishare2-org/ishare2-cli (Tool that helps download and manage images)
