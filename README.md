@@ -59,4 +59,5 @@ sudo ./install_pnetlab_v6.sh
 <br>
 
 # Credits
-A big thank you and all credit to PNETLab and the vibrant community who helps to maintain and evolve the platform.
+All credit belong to PNETLab and the vibrant community who helps to maintain and evolve the platform.
+Big thank you.
