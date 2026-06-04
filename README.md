@@ -1,5 +1,6 @@
 # PNETLabv6 - Custom Offline Installer
 This repository provides a minor, independent optimization made to the PNETLab installation script.
+The current PNETLab version referred to is **6.0.0-103**.
 <br>
 
 ## Installation Guide
@@ -67,9 +68,14 @@ sudo reboot
 > Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu Server 20.04.6 LTS.
 <br>
 
+---
 
-# Credits
-All credit belong to PNETLab and the vibrant community who helps to maintain and evolve the platform.
-Big thank you.
-<br>
+## Credits
+All credit belongs to **PNETLab** and the vibrant community that helps to maintain and evolve the platform. 
 
+Additionally, a big thank you to **Canonical** for providing such an incredible operating system like Ubuntu Server. Your work makes community projects like this possible!
+
+*Big thank you to both!*
+
+## Disclaimer
+All original software, binaries, and trademarks belong exclusively to their respective owners. This repository does not own these files. The provided links are shared solely as an independent mirror to assist the community with Network Labbing. This project is not affiliated with or endorsed by PNETLab or Canonical.
