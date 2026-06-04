@@ -1,8 +1,10 @@
 # PNETLabv6 - Custom Offline Installer
-This repository provides a minor, independent optimization made to the PNETLab installation script.
+
+This repository provides a minor, independent optimization for the PNETLab installation script, featuring an updated shared file.
 <br>
-The PNETLab version referred to is **6.0.0-103**.
+The PNETLab version referred to is **6.0.0-103** (released around the summer of 2025), a critical community-driven update that patches PHP 7.4. PNETLab v6 is built to run on Ubuntu Server 20.04.6 LTS.
 <br>
+
 
 ## Installation Guide
 ### 1 - Download and Install **Ubuntu Server 20.04.6 LTS**:
