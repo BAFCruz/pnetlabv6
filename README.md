@@ -39,8 +39,12 @@ sudo tar -xvzf offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.
 cd offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install/
 chmod +x install_pnetlab_v6.sh
 sudo ./install_pnetlab_v6.sh
+```
+Perform a reboot after concluding the installation:
+```bash
 sudo reboot
 ```
+
 <br>
 
 #### ⚠️ System credentials are replaced by PNETLab's default after installation.
