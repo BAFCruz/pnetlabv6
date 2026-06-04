@@ -1,6 +1,7 @@
 # PNETLabv6 - Custom Offline Installer
 This repository provides a minor, independent optimization made to the PNETLab installation script.
-The current PNETLab version referred to is **6.0.0-103**.
+<br>
+The PNETLab version referred to is **6.0.0-103**.
 <br>
 
 ## Installation Guide
