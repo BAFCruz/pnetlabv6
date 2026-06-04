@@ -60,8 +60,8 @@ sudo reboot
 ### 5. Upload node images and Have Fun with the Network Simulator! 🎉
 <br>
 
-* https://github.com/ishare2-org/ishare2-cli (Tool that helps download and manage images)
-* https://drive.labhub.eu.org/0:/ (Community repository)
+* [ishare2](https://github.com/ishare2-org/ishare2-cli) - Tool that helps download and manage images
+* [labhub](https://drive.labhub.eu.org/0:/) - Community repository
 
 <br>
 
