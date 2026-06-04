@@ -39,24 +39,26 @@ sudo tar -xvzf offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.
 cd offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install/
 chmod +x install_pnetlab_v6.sh
 sudo ./install_pnetlab_v6.sh
+sudo reboot
 ```
 <br>
 
+#### ⚠️ System credentials are replaced by PNETLab's default after installation.
+* **CLI Access:** root / pnet
+
+* **GUI Access:** admin / pnet
+<br>
 
 ### 5. Upload node images and Have Fun Labbing! 🎉
 <br>
+
+> [!CAUTION]
+> **DO NOT UPGRADE THE OS AFTER INSTALLATION**
+> <br>
+> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu Server 20.04.6 LTS.
+<br>
 <br>
 
-## PnetLab default credentials
-⚠️ **Warning**: The system credentials will be replaced by PnetLab's defaults after installation.
-<br>
-<br>
-**CLI Access:** root / pnet
-<br>
-**GUI Access:** admin / pnet
-<br>
-<br>
-<br>
 
 # Credits
 All credit belong to PNETLab and the vibrant community who helps to maintain and evolve the platform.
