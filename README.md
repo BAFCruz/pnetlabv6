@@ -80,4 +80,4 @@ Additionally, a big thank you to **Canonical** for providing such an incredible 
 *Big thank you to both!*
 
 ## Disclaimer
-All original software, binaries, and trademarks belong exclusively to their respective owners. This repository does not own these files. The provided links are shared solely as an independent mirror to assist the community with Network Labbing. This project is not affiliated with or endorsed by PNETLab or Canonical.
+All original software, binaries, and trademarks belong exclusively to their respective owners. This repository does not own these files. The provided links are shared solely as an independent mirror to assist the community with Network Emulation. This project is not affiliated with or endorsed by PNETLab or Canonical.
