@@ -56,14 +56,20 @@ sudo reboot
 ### 5. Upload node images and Have Fun Labbing! 🎉
 <br>
 
+* https://github.com/ishare2-org/ishare2-cli (Tool that helps download and manage images)
+* https://drive.labhub.eu.org/0:/ (Community repository)
+
+<br>
+
 > [!CAUTION]
 > **DO NOT UPGRADE THE OS AFTER INSTALLATION**
 > <br>
 > Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu Server 20.04.6 LTS.
-<br>
 <br>
 
 
 # Credits
 All credit belong to PNETLab and the vibrant community who helps to maintain and evolve the platform.
 Big thank you.
+<br>
+
