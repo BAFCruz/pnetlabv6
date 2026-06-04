@@ -8,8 +8,8 @@ The PNETLab version referred to is **6.0.0-103** (released around the summer of 
 
 ## Installation Guide
 ### 1 - Download and Install **Ubuntu Server 20.04.6 LTS**:
-* **Mirror 1 (Official):** https://www.releases.ubuntu.com/focal/ 
-* **Mirror 2:** https://drive.google.com/file/d/1vuepEsuFY0cQ90jPxLWPBppFstI8Qp2z/view?usp=sharing
+* **[Mirror 1 - Official](https://www.releases.ubuntu.com/focal/)**
+* **[Mirror 2](https://drive.google.com/file/d/1vuepEsuFY0cQ90jPxLWPBppFstI8Qp2z/view?usp=sharing)**
 <br>
 
 ### 2 - Update System Packages:
@@ -22,8 +22,8 @@ sudo apt update && sudo apt upgrade -y
 ### 3 - Download and Upload PNETLab v6 Installer to Ubuntu:
 
 Download the **offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz** file. 
-* **Mirror 1:** https://drive.google.com/file/d/1bGR_HjNnUQ5bP0ceBjGvqgVykPn78kpY/view?usp=sharing
-* **Mirror 2:** Coming soon
+* **[Mirror 1](https://drive.google.com/file/d/1bGR_HjNnUQ5bP0ceBjGvqgVykPn78kpY/view?usp=sharing)**
+* **[Mirror 2](https://wdfiles.ru/1v4u7)**
 <br>
 
 
