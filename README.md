@@ -1,1 +1,62 @@
-# pnetlabv6
+# PNETLabv6 - Custom Offline Installer
+This repository provides a minor, independent optimization made to the PNETLab installation script.
+<br>
+
+## Installation Guide
+### 1 - Download and Install **Ubuntu Server 20.04.6 LTS**:
+* **Mirror 1 (Official):** https://www.releases.ubuntu.com/focal/ 
+* **Mirror 2:** https://drive.google.com/file/d/1vuepEsuFY0cQ90jPxLWPBppFstI8Qp2z/view?usp=sharing
+<br>
+
+### 2 - Update System Packages:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+<br>
+
+### 3 - Upload PNETLabv6 Installer to Ubuntu:
+
+Download the **offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz** file. 
+* **Mirror 1:** https://drive.google.com/file/d/1QmtlbDO_mtQ3163lWhI6kMfhmVI0BMJi/view?usp=sharing
+* **Mirror 2:** https://wdfiles.ru/2b1U9
+<br>
+
+
+Upload the *.tar.gz* file to Ubuntu Server **/tmp** directory, using an FTP client like WinSCP or FileZilla.
+<br>
+
+Extract the content from the file:
+
+```bash
+sudo tar -xvzf offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz
+```
+<br>
+
+### 4 - Install PNETLab:
+
+```bash
+cd offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install/
+chmod +x install_pnetlab_v6.sh
+sudo ./install_pnetlab_v6.sh
+```
+<br>
+
+
+### 5. Upload node images and Have Fun Labbing! 🎉
+<br>
+<br>
+
+## PnetLab default credentials
+⚠️ **Warning**: The system credentials will be replaced by PnetLab's defaults after installation.
+<br>
+<br>
+**CLI Access:** root / pnet
+<br>
+**GUI Access:** admin / pnet
+<br>
+<br>
+<br>
+
+# Credits
+A big thank you and all credit to PNETLab and the vibrant community who helps to maintain and evolve the platform.
