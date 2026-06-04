@@ -20,8 +20,8 @@ sudo apt update && sudo apt upgrade -y
 ### 3 - Upload PNETLabv6 Installer to Ubuntu:
 
 Download the **offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz** file. 
-* **Mirror 1:** https://drive.google.com/file/d/1QmtlbDO_mtQ3163lWhI6kMfhmVI0BMJi/view?usp=sharing
-* **Mirror 2:** https://wdfiles.ru/2b1U9
+* **Mirror 1:** https://drive.google.com/file/d/1bGR_HjNnUQ5bP0ceBjGvqgVykPn78kpY/view?usp=sharing
+* **Mirror 2:** Coming soon
 <br>
 
 
@@ -68,6 +68,11 @@ sudo reboot
 > <br>
 > Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu Server 20.04.6 LTS.
 <br>
+
+---
+There are plenty of video tutorials online.
+<br>
+Here is an example for installing on ESXI 8: https://www.youtube.com/watch?v=0N5lp6pHx7A
 
 ---
 
