@@ -1,4 +1,4 @@
-# PNETLabv6 - Custom Offline Installer
+# PNETLab v6 - Custom Offline Installer
 
 This repository provides a minor, independent optimization for the PNETLab installation script, featuring an updated shared file.
 <br>
