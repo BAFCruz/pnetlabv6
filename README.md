@@ -22,8 +22,8 @@ sudo apt update && sudo apt upgrade -y
 ### 3 - Download and Upload PNETLab v6 Installer to Ubuntu:
 
 Download the **offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz** file. 
-* **[Mirror 1](https://drive.google.com/file/d/1bGR_HjNnUQ5bP0ceBjGvqgVykPn78kpY/view?usp=sharing)**
 * **[Mirror 2](https://wdfiles.ru/1v4u7)**
+* **[Mirror 1](https://drive.google.com/file/d/1bGR_HjNnUQ5bP0ceBjGvqgVykPn78kpY/view?usp=sharing)**
 <br>
 
 
