@@ -61,7 +61,7 @@ sudo reboot
 <br>
 
 * [ishare2](https://github.com/ishare2-org/ishare2-cli) - Tool that helps download and manage images
-* [Official Repository](https://legacy.labhub.eu.org/0:/)
+* [LabHub Repository](https://legacy.labhub.eu.org/0:/)
 
 <br>
 
