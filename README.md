@@ -58,7 +58,7 @@ sudo reboot
 
 <br>
 
-#### ⚠️ System credentials are replaced by PNETLab's default after installation.
+#### ⚠️ System credentials are replaced by PNETLab's default after rebooting.
 * **CLI Access:** root / pnet
 
 * **GUI Access:** admin / pnet
