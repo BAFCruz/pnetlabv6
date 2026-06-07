@@ -74,7 +74,7 @@ sudo reboot
 ## Credits
 All credit belongs to **PNETLab** and the vibrant community for the incredible platform and continous evolution.
 
-Additionally, a big thank you to **Canonical** for providing such an incredible operating system like Ubuntu Server. Your work makes community projects like this possible!
+Additionally, a big thank you to **Canonical** for providing such an incredible operating system like Ubuntu. Your work makes community projects like this possible!
 
 *Deep gratitue to both sides!*
 
