@@ -14,9 +14,9 @@ PNETLab v6 is built to run on Ubuntu 20.04.
 * **[Mirror 2](https://drive.google.com/file/d/1vuepEsuFY0cQ90jPxLWPBppFstI8Qp2z/view?usp=sharing)**
 <br>
 
-#### ⚠️ On an Hypervisor ensure the VM Option "Enable UEFI secure boot" is disabled in order to boot into the system after concluding Step 4.
+⚠️ On an Hypervisor ensure the VM Option "Enable UEFI secure boot" is disabled in order to boot into the system after concluding Step 4.
 <br>
-
+<br>
 
 ### 2 - Update System Packages:
 
