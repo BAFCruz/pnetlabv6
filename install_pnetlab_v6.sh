@@ -13,6 +13,7 @@ NO_COLOR='\033[0m'
 rm /var/lib/dpkg/lock* &>/dev/null
 dpkg --configure -a &>/dev/null
 
+
 lsb_release -r -s | grep -q 20.04
 if [ $? -ne 0 ]; then
     echo -e "${RED}This script is designed to work on UBUNTU 20.04 only${NO_COLOR}"
@@ -47,6 +48,8 @@ sed -i -e 's/.*DefaultTimeoutStopSec=.*/DefaultTimeoutStopSec=5s/' /etc/systemd/
 systemctl restart ssh &>/dev/null
 #install  packages required
 add-apt-repository --yes ppa:ondrej/php &>/dev/null
+apt-get update
+
 # set passwrod for root
 if [ ! -e /opt/ovf/.configured ]; then
     echo root:pnet | chpasswd &>/dev/null
@@ -56,26 +59,30 @@ fi
 systemd-detect-virt -v >/tmp/hypervisor
 resize() {
     ROOTLV=$(mount | grep ' / ' | awk '{print $1}')
-    echo $ROOTLV
-    lvextend -l +100%FREE $ROOTLV
+    echo "$ROOTLV"
+    lvextend -l +100%FREE "$ROOTLV"
     echo Resizing ROOT FS
-    resize2fs $ROOTLV
+    resize2fs "$ROOTLV"
 }
 fgrep -e kvm -e none /tmp/hypervisor 2>&1 >/dev/null
 if [[ $? -eq 0 ]]; then
     grep -q kvm /tmp/hypervisor && resize &>/dev/null
     grep -q none /tmp/hypervisor && resize &>/dev/null
 fi
+
+apt-get purge -y docker.io containerd runc php8* -q &>/dev/null
+
 rm /var/lib/dpkg/lock* &>/dev/null
 apt-get install -y ifupdown unzip &>/dev/null
-echo -e "${GREEN}Installing dependencies for PNETLAB ${NO_COLOR}"
-apt-get install -y resolvconf libnet-pcap-perl duc libspice-client-glib-2.0-8 libtinfo5 libncurses5 libncursesw5 php7.2-gd ntpdate vim dos2unix apache2 bridge-utils build-essential cpulimit debconf-utils dialog dmidecode genisoimage iptables lib32gcc1 lib32z1 pastebinit php7.2-xml libc6 libc6-i386 libelf1 libpcap0.8 libsdl1.2debian logrotate lsb-release lvm2 ntp php7.2 rsync sshpass autossh php7.2-cli php7.2-imagick php7.2-mysql php7.2-sqlite3 plymouth-label python3-pexpect sqlite3 tcpdump telnet uml-utilities zip libguestfs-tools cgroup-tools libyaml-0-2 php7.2-curl php7.2-mbstring net-tools php7.2-zip python2 libapache2-mod-php7.2 mysql-server libavcodec58 libavformat58 libavutil56 libswscale5 libfreerdp-client2-2 libfreerdp-server2-2 libfreerdp-shadow-subsystem2-2 libfreerdp-shadow2-2 libfreerdp2-2 winpr-utils gir1.2-pango-1.0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpangoxft-1.0-0 pango1.0-tools pkg-config libssh2-1 libtelnet2 libvncclient1 libvncserver1 libwebsockets15 libpulse0 libpulse-mainloop-glib0 libssl1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libwebp6 libwebpmux3 libwebpdemux2 libcairo2 libcairo-gobject2 libcairo-script-interpreter2 libjpeg62 libpng16-16 libtool libuuid1 libossp-uuid16 default-jdk default-jdk-headless lsb-release rsync sshpass telnet tomcat9 tomcat9-admin tomcat9-docs libaio1 libasound2 libbrlapi0.7 libc6 libcacard0 libepoxy0 libfdt1 libgbm1 libgcc-s1 libglib2.0-0 libgnutls30 libibverbs1 libjpeg8 libncursesw6 libnettle7 libnuma1 libpixman-1-0 libpmem1 libpng16-16 librdmacm1 libsasl2-2 libseccomp2 libslirp0 libspice-server1 libtinfo6 libusb-1.0-0 libusbredirparser1 libvirglrenderer1 zlib1g qemu-system-common libseccomp2 qemu-system-data ipxe-qemu-256k-compat-efi-roms seabios ipxe-qemu udhcpd busybox libsdl2-2.0-0 libxenmisc4.11 libcapstone3 libvdeplug2 libnfs13 ovmf
-apt-get purge -y docker.io containerd runc php7.4* php8* -q &>/dev/null
-update-alternatives --set php /usr/bin/php7.2 &>/dev/null
+echo -e "${GREEN}Downloading dependencies for PNETLAB ${NO_COLOR}"
+
+sudo apt install -y resolvconf php7.4 php7.4-yaml php7.4-common php7.4-cli php7.4-curl php7.4-gd php7.4-mbstring php7.4-json php7.4-opcache php7.4-readline php7.4-mysql php7.4-sqlite3 php7.4-xml php7.4-zip libapache2-mod-php7.4 libnet-pcap-perl duc libspice-client-glib-2.0-8 libtinfo5 libncurses5 libncursesw5 php-gd ntpdate vim dos2unix apache2 bridge-utils build-essential cpulimit debconf-utils dialog dmidecode genisoimage iptables lib32gcc1 lib32z1 pastebinit php-xml libc6 libc6-i386 libelf1 libpcap0.8 libsdl1.2debian logrotate lsb-release lvm2 ntp php rsync sshpass autossh php-cli php-imagick php-mysql php-sqlite3 plymouth-label python3-pexpect sqlite3 tcpdump telnet uml-utilities zip libguestfs-tools cgroup-tools libyaml-0-2 php-curl php-mbstring net-tools php-zip python2 libapache2-mod-php mysql-server libavcodec58 libavformat58 libavutil56 libswscale5 libfreerdp-client2-2 libfreerdp-server2-2 libfreerdp-shadow-subsystem2-2 libfreerdp-shadow2-2 libfreerdp2-2 winpr-utils gir1.2-pango-1.0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpangoxft-1.0-0 pango1.0-tools pkg-config libssh2-1 libtelnet2 libvncclient1 libvncserver1 libwebsockets15 libpulse0 libpulse-mainloop-glib0 libssl1.1 libvorbis0a libvorbisenc2 libvorbisfile3 libwebp6 libwebpmux3 libwebpdemux2 libcairo2 libcairo-gobject2 libcairo-script-interpreter2 libjpeg62 libpng16-16 libtool libuuid1 libossp-uuid16 default-jdk default-jdk-headless tomcat9 tomcat9-admin tomcat9-docs libaio1 libasound2 libbrlapi0.7 libcacard0 libepoxy0 libfdt1 libgbm1 libgcc-s1 libglib2.0-0 libgnutls30 libibverbs1 libjpeg8 libncursesw6 libnettle7 libnuma1 libpixman-1-0 libpmem1 librdmacm1 libsasl2-2 libseccomp2 libslirp0 libspice-server1 libtinfo6 libusb-1.0-0 libusbredirparser1 libvirglrenderer1 zlib1g qemu-system-common libxenmisc4.11 libcapstone3 libvdeplug2 libnfs13 udhcpd libxss1 libxencall1 libxendevicemodel1 libxenevtchn1 libxenforeignmemory1 libxengnttab1 libxenstore3.0 libxentoollog1 libxentoolcore1 php-common libsdl2-2.0-0 libsdl2-dev freerdp2-x11 freerdp2-wayland libjpeg-turbo8 fonts-liberation fonts-dejavu
+
+update-alternatives --set php /usr/bin/php &>/dev/null
 
 echo -e "${GREEN}Inflating zip files${NO_COLOR}"
-for i in ./dependencies/*.zip; do
-    unzip "$i" -d ./dependencies/
+for i in $(ls ./dependencies/*.zip); do
+    unzip $i -d ./dependencies/
 done
 
 echo -e "${GREEN}Installing PNETLAB PACKAGES ...${NO_COLOR}"
@@ -105,7 +112,7 @@ if [ $? -ne 0 ]; then
     dpkg -i ./dependencies/pnetlab-schema_*.deb
 fi
 
-dpkg-query -l | grep pnetlab-guacamole | grep 6.0.0-7 -q
+dpkg-query -l | grep pnetlab-guacamole | grep 6.0.0-30 -q
 if [ $? -ne 0 ]; then
     dpkg -i ./dependencies/pnetlab-guacamole_*.deb
 fi
@@ -138,7 +145,7 @@ dpkg -i ./dependencies/pnetlab_6*.deb
 # Detect cloud
 
 gcp_tune() {
-    cd /sys/class/net/ || echo "No network interfaces found" && exit 1
+    cd /sys/class/net/
     for i in ens*; do echo 'SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="'$(cat $i/address)'", ATTR{type}=="1", KERNEL=="ens*", NAME="'$i'"'; done >/etc/udev/rules.d/70-persistent-net.rules
     sed -i -e 's/NAME="ens.*/NAME="eth0"/' /etc/udev/rules.d/70-persistent-net.rules
     sed -i -e 's/ens4/eth0/' /etc/netplan/50-cloud-init.yaml
