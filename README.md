@@ -67,16 +67,16 @@ sudo reboot
 > [!CAUTION]
 > **DO NOT UPGRADE THE OS AFTER INSTALLATION**
 > <br>
-> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu Server 20.04.6 LTS.
+> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu 20.04.
 <br>
 
 
 ## Credits
-All credit belongs to **PNETLab** and the vibrant community that helps to maintain and evolve the platform. 
+All credit belongs to **PNETLab** and the vibrant community for the incredible platform and continous evolution.
 
 Additionally, a big thank you to **Canonical** for providing such an incredible operating system like Ubuntu Server. Your work makes community projects like this possible!
 
-*Big thank you to both!*
+*Deep gratitue to both sides!*
 
 ## Disclaimer
-All original software, binaries, and trademarks belong exclusively to their respective owners. This repository does not own these files. The provided links are shared solely as an independent mirror to assist the community with Network Emulation. This project is not affiliated with or endorsed by PNETLab or Canonical.
+All trademarks, binaries, and software belong to their respective owners. This independent mirror is provided solely for educational and community support in network emulation. This project is not affiliated with, sponsored by, or endorsed by the mentioned parties.
