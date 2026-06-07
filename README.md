@@ -67,7 +67,7 @@ sudo reboot
 > [!CAUTION]
 > **DO NOT UPGRADE THE OS AFTER INSTALLATION**
 > <br>
-> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was built for Ubuntu 20.04.
+> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was customly built for Ubuntu 20.04.
 <br>
 
 
