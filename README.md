@@ -2,7 +2,9 @@
 
 This repository provides a minor, independent optimization for the PNETLab installation script, featuring an updated shared file.
 <br>
-The PNETLab version referred to is **6.0.0-103** (released around the summer of 2025), a critical community-driven update that patches PHP 7.4. PNETLab v6 is built to run on Ubuntu 20.04.
+The PNETLab version referred to is **6.0.0-103** (released around the summer of 2025), a critical community-driven update that patches PHP 7.4. 
+<br>
+PNETLab v6 is built to run on Ubuntu 20.04.
 <br>
 
 
