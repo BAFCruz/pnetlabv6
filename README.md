@@ -23,8 +23,8 @@ sudo apt update && sudo apt upgrade -y
 
 ### 3 - Download and Upload PNETLab v6 Installer to Ubuntu:
 
-Download the **offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz** file.
-* **[Mirror 1](https://drive.google.com/file/d/1bGR_HjNnUQ5bP0ceBjGvqgVykPn78kpY/view?usp=sharing)**
+Download the **offline-pnetlab-v6-0.0-103_upgraded_guacamole_optimized_libs.tar.gz** file.
+* **[Mirror 1](https://drive.google.com/file/d/17ZouMAYiLJxhOGShOFSeYruEHE-bk9Ni/view?usp=sharing)**
 * **[Mirror 2](https://wdfiles.ru/1v4u7)**
 <br>
 
@@ -35,14 +35,14 @@ Upload the *.tar.gz* file to Ubuntu Server **/tmp** directory, using an FTP clie
 Extract the content from the file:
 
 ```bash
-sudo tar -xvzf offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install.tar.gz
+sudo tar -xvzf offline-pnetlab-v6-0.0-103_upgraded_guacamole_optimized_libs.tar.gz
 ```
 <br>
 
 ### 4 - Install PNETLab:
 
 ```bash
-cd offline-pnetlab-v6-0.0-103_patched_libsdl2_optimized_install/
+cd offline-pnetlab-v6-0.0-103_upgraded_guacamole_optimized_libs/
 sudo chmod +x install_pnetlab_v6.sh
 sudo ./install_pnetlab_v6.sh
 ```
