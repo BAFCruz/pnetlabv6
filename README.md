@@ -86,4 +86,8 @@ Additionally, a big thank you to **Canonical** for providing such an incredible 
 *Deep gratitue to both sides!*
 
 ## Disclaimer
-All trademarks, binaries, and software belong to their respective owners. This independent mirror is provided solely for educational and community support in network emulation. This project is not affiliated with, sponsored by, or endorsed by the mentioned parties.
+All trademarks, binaries, and software belong to their respective owners. 
+
+This independent mirror is provided solely for educational and community support in network emulation. 
+
+This project is not affiliated with, sponsored by, or endorsed by the mentioned parties.
