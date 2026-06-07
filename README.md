@@ -14,6 +14,10 @@ PNETLab v6 is built to run on Ubuntu 20.04.
 * **[Mirror 2](https://drive.google.com/file/d/1vuepEsuFY0cQ90jPxLWPBppFstI8Qp2z/view?usp=sharing)**
 <br>
 
+#### ⚠️ On an Hypervisor ensure the VM Option "Enable UEFI secure boot" is disabled in order to boot into the system after concluding Step 4.
+<br>
+
+
 ### 2 - Update System Packages:
 
 ```bash
@@ -46,6 +50,7 @@ cd offline-pnetlab-v6-0.0-103_upgraded_guacamole_optimized_libs/
 sudo chmod +x install_pnetlab_v6.sh
 sudo ./install_pnetlab_v6.sh
 ```
+
 Perform a reboot after concluding the installation:
 ```bash
 sudo reboot
