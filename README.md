@@ -80,14 +80,14 @@ sudo reboot
 
 ## Credits
 All credit belongs to **PNETLab** and the vibrant community for the incredible platform and continous evolution.
-
+<br>
 Additionally, a big thank you to **Canonical** for providing such an incredible operating system like Ubuntu. Your work makes community projects like this possible!
 
 *Deep gratitue to both sides!*
 
 ## Disclaimer
 All trademarks, binaries, and software belong to their respective owners. 
-
+<br>
 This independent mirror is provided solely for educational and community support in network emulation. 
-
+<br>
 This project is not affiliated with, sponsored by, or endorsed by the mentioned parties.
