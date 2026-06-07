@@ -25,7 +25,7 @@ sudo apt update && sudo apt upgrade -y
 
 Download the **offline-pnetlab-v6-0.0-103_upgraded_guacamole_optimized_libs.tar.gz** file.
 * **[Mirror 1](https://drive.google.com/file/d/17ZouMAYiLJxhOGShOFSeYruEHE-bk9Ni/view?usp=sharing)**
-* **[Mirror 2](https://wdfiles.ru/1v4u7)**
+* **[Mirror 2](https://wdfiles.ru/1v54m)**
 <br>
 
 
