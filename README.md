@@ -84,7 +84,7 @@ sudo reboot
 After rebooting and sucessfully logging into PNetLab.
 <br>
 
-Download the **tune_tomcat.sh** script file.
+Download the [tune tomcat script](https://github.com/BAFCruz/pnetlabv6/blob/main/tune_tomcat.sh) .
 <br>
 
 Upload the script to Ubuntu Server **/tmp** directory, using an FTP client like WinSCP or FileZilla.
@@ -97,6 +97,7 @@ sudo chmod +x tune_tomcat.sh
 sudo ./tune_tomcat.sh
 ```
 <br>
+
 
 
 
