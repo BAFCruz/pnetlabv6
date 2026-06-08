@@ -65,6 +65,7 @@ sudo reboot
 * **GUI Access:** admin / pnet
 <br>
 
+
 ### 5. Upload node images and Have Fun with the Network Simulator! 🎉
 <br>
 
@@ -77,6 +78,26 @@ sudo reboot
 > <br>
 > Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was customly built for Ubuntu 20.04.
 <br>
+
+
+### 6. Optimize HTML console responsivness (Recommended)
+After rebooting and sucessfully logging into PNetLab.
+<br>
+
+Download the **tune_tomcat.sh** script file.
+<br>
+
+Upload the script to Ubuntu Server **/tmp** directory, using an FTP client like WinSCP or FileZilla.
+<br>
+
+Run the script:
+```bash
+cd /tmp
+sudo chmod +x tune_tomcat.sh
+sudo ./tune_tomcat.sh
+```
+<br>
+
 
 
 ## Credits
