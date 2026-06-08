@@ -7,6 +7,7 @@ The PNETLab version referred to is **6.0.0-103** (released around the summer of 
 PNETLab v6 is built to run on Ubuntu 20.04.
 <br>
 
+**[PNETLab Overview - DeepWiki](https://deepwiki.com/pnetlab/pnetlab_main/1-pnetlab-overview)**
 
 ## Installation Guide
 ### 1 - Download and Install **Ubuntu Server 20.04.6 LTS**:
