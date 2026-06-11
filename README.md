@@ -1,6 +1,6 @@
 # PNETLab v6 - Custom Offline Installer
 
-This repository provides minor, independent optimizations for the PNETLab offline installation, featuring updated packages
+This repository provides minor, independent optimizations for the PNETLab offline installation, featuring updated packages.
 <br>
 The PNETLab version referred to is **6.0.0-103** (released around the summer of 2025), a critical community-driven update that transitioned the platform to PHP 7.4. 
 <br>
