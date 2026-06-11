@@ -11,7 +11,7 @@ PNETLab v6 is built to run on Ubuntu 20.04.
 ### Changelog
 * **Optimized Core Libraries:** Streamlined system dependencies by removing redundant libraries and introducing new ones to reduce latency and improve HTML console responsiveness.
 * **Updated Core Binary:** Upgraded `pnetlab-guacamole` from `6.0.0-7` to `6.0.0-30` for improved stability and protocol handling.
-* **Automated JVM Tuning:** Introduced an automated configuration [script](https://github.com/BAFCruz/pnetlabv6/blob/main/tune_tomcat.sh) for Tomcat9 that dynamically allocates Java Heap, based on system RAM, and enforces performance-optimized settings:
+* **Automated JVM Tuning:** Introduced an [automated configuration script](https://github.com/BAFCruz/pnetlabv6/blob/main/tune_tomcat.sh) for Tomcat9 that dynamically allocates Java Heap, based on system RAM, and enforces performance-optimized settings:
     * **Fixed Heap Allocation (`-Xms`, `-Xmx`):** Eliminates heap-resizing latency during high-load periods, to prevent temporary UI freezes.
     * **Explicit G1GC:** Enforces, even though it should by default, garbage collection to prevent "Stop-The-World" UI freezes.
     * **Entropy Optimization (`/dev/urandom`):** Removes startup bottlenecks associated with secure random number generation, caused by JVM waiting for sufficient entropy.
