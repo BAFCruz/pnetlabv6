@@ -18,7 +18,9 @@ PNETLab v6 is built to run on Ubuntu 20.04.
     * **Memory Safeguards:** Implements `MaxMetaspaceSize` limits to prevent metadata leaks from impacting host stability.
 <br>
 
-**[PNETLab Overview - DeepWiki](https://deepwiki.com/pnetlab/pnetlab_main/1-pnetlab-overview)**
+**[PNETLab Overview - DeepWiki](https://deepwiki.com/pnetlab/pnetlab_main/1-pnetlab-overview)** | 
+**[PNETLab Mainpage](https://www.pnetlab.com/pages/main)** | 
+**[LabHub Repository](https://legacy.labhub.eu.org/0:/)**
 
 <br>
 
