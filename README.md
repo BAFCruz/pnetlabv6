@@ -1,13 +1,26 @@
 # PNETLab v6 - Custom Offline Installer
 
-This repository provides minor, independent optimization for the PNETLab offline installation, featuring an updated package.
+This repository provides minor, independent optimizations for the PNETLab offline installation, featuring updated packages
 <br>
-The PNETLab version referred to is **6.0.0-103** (released around the summer of 2025), a critical community-driven update that patches PHP 7.4. 
+The PNETLab version referred to is **6.0.0-103** (released around the summer of 2025), a critical community-driven update that transitioned the platform to PHP 7.4. 
 <br>
 PNETLab v6 is built to run on Ubuntu 20.04.
 <br>
+<br>
+
+### Changelog
+* **Optimized Core Libraries:** Streamlined system dependencies by removing redundant libraries and introducing new ones to reduce latency and improve HTML console responsiveness.
+* **Updated Core Binary:** Upgraded `pnetlab-guacamole` from `6.0.0-7` to `6.0.0-30` for improved stability and protocol handling.
+* **Automated JVM Tuning:** Introduced an automated configuration [script](https://github.com/BAFCruz/pnetlabv6/blob/main/tune_tomcat.sh) for Tomcat9 that dynamically allocates Java Heap, based on system RAM, and enforces performance-optimized settings:
+    * **Fixed Heap Allocation (`-Xms`, `-Xmx`):** Eliminates heap-resizing latency during high-load periods, to prevent temporary UI freezes.
+    * **Explicit G1GC:** Enforces, even though it should by default, garbage collection to prevent "Stop-The-World" UI freezes.
+    * **Entropy Optimization (`/dev/urandom`):** Removes startup bottlenecks associated with secure random number generation, caused by JVM waiting for sufficient entropy.
+    * **Memory Safeguards:** Implements `MaxMetaspaceSize` limits to prevent metadata leaks from impacting host stability.
+<br>
 
 **[PNETLab Overview - DeepWiki](https://deepwiki.com/pnetlab/pnetlab_main/1-pnetlab-overview)**
+
+<br>
 
 ## Installation Guide
 ### 1 - Download and Install **Ubuntu Server 20.04.6 LTS**:
@@ -80,11 +93,11 @@ sudo reboot
 <br>
 
 
-### 6. Optimize HTML console responsiveness (Optional but Recommended)
+### 6. Optimize HTML console responsiveness (Optional but Highly Recommended)
 After rebooting and sucessfully logging into PNetLab.
 <br>
 
-Download the [tune tomcat script](https://github.com/BAFCruz/pnetlabv6/blob/main/tune_tomcat.sh) .
+Download the [tune tomcat script](https://github.com/BAFCruz/pnetlabv6/blob/main/tune_tomcat.sh).
 <br>
 
 Upload the script to Ubuntu Server **/tmp** directory, using an FTP client like WinSCP or FileZilla.
