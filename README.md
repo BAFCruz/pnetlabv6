@@ -81,21 +81,7 @@ sudo reboot
 <br>
 
 
-### 5. Upload node images and Have Fun with the Network Simulator! 🎉
-<br>
-
-* [LabHub Repository](https://legacy.labhub.eu.org/0:/)
-* [ishare2](https://github.com/ishare2-org/ishare2-cli)
-<br>
-
-> [!CAUTION]
-> **DO NOT UPGRADE THE OS AFTER INSTALLATION**
-> <br>
-> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was customly built for Ubuntu 20.04.
-<br>
-
-
-### 6. Optimize HTML console responsiveness
+### 5. Optimize HTML console responsiveness
 After rebooting and sucessfully logging into PNetLab.
 <br>
 
@@ -113,6 +99,19 @@ sudo ./tune_tomcat.sh
 ```
 <br>
 
+
+### 6. Upload node images and Have Fun with the Network Simulator! 🎉
+<br>
+
+* [LabHub Repository](https://legacy.labhub.eu.org/0:/)
+* [ishare2](https://github.com/ishare2-org/ishare2-cli)
+<br>
+
+> [!CAUTION]
+> **DO NOT UPGRADE THE OS AFTER INSTALLATION**
+> <br>
+> Running a system upgrade after installation can break PnetLab, since it relies on specific library versions and was customly built for Ubuntu 20.04.
+<br>
 
 
 
