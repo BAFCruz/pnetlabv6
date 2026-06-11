@@ -95,7 +95,7 @@ sudo reboot
 <br>
 
 
-### 6. Optimize HTML console responsiveness (Optional but Highly Recommended)
+### 6. Optimize HTML console responsiveness
 After rebooting and sucessfully logging into PNetLab.
 <br>
 
