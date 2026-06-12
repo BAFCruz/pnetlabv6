@@ -17,11 +17,11 @@ configure_java_heap() {
     TOTAL_RAM_KB=$(grep MemTotal /proc/meminfo | awk '{print $2}')
     TOTAL_RAM_GB=$((TOTAL_RAM_KB / 1024 / 1024))
 
-    if [ "$TOTAL_RAM_GB" -lt 30 ]; then HEAP_SIZE="512m"
-    elif [ "$TOTAL_RAM_GB" -lt 60 ]; then HEAP_SIZE="1024m"
-    elif [ "$TOTAL_RAM_GB" -lt 90 ]; then HEAP_SIZE="1536m"
-    elif [ "$TOTAL_RAM_GB" -lt 185 ]; then HEAP_SIZE="2048m"
-    else HEAP_SIZE="3072m"
+    if [ "$TOTAL_RAM_GB" -lt 30 ]; then HEAP_SIZE="1024m"
+    elif [ "$TOTAL_RAM_GB" -lt 60 ]; then HEAP_SIZE="2048m"
+    elif [ "$TOTAL_RAM_GB" -lt 90 ]; then HEAP_SIZE="3072m"
+    elif [ "$TOTAL_RAM_GB" -lt 185 ]; then HEAP_SIZE="4096m"
+    else HEAP_SIZE="6144m"
     fi
 
     JAVA_OPTS_STRING="-Djava.awt.headless=true -Xms${HEAP_SIZE} -Xmx${HEAP_SIZE} -XX:MaxMetaspaceSize=256m -XX:+UseG1GC -Djava.security.egd=file:/dev/urandom"
