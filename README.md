@@ -19,6 +19,7 @@ PNETLab v6 is built to run on Ubuntu 20.04.
 <br>
 
 **[PNETLab Overview - DeepWiki](https://deepwiki.com/pnetlab/pnetlab_main/1-pnetlab-overview)** | 
+**[PNETLab GitHub](https://github.com/pnetlab/pnetlab_main)** | 
 **[PNETLab Mainpage](https://www.pnetlab.com/pages/main)** | 
 **[LabHub Repository](https://legacy.labhub.eu.org/0:/)**
 
